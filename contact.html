@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - ULTIMATE Visualisation Studio</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <a href="./index.html">
+          <img
+            src="./images/logo.png"
+            alt="ULTIMATE Visualisation Studio Logo"
+          />
+        </a>
+      </div>
+
+      <!-- Hamburger Toggle Button -->
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Toggle Navigation"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="./work.html">Work</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <!-- Left Side: Contact Form -->
+        <div class="contact-left">
+          <h2>Get in touch at:</h2>
+          
+          <!-- PHP Email Action -->
+          <form class="contact-form" action="email.php" method="POST">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="phone" placeholder="Contact" />
+            <textarea name="message" placeholder="Message" rows="6" required></textarea>
+            <div class="btn-container">
+              <button type="submit" class="btn-submit">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Right Side: Google Map & Address -->
+        <div class="contact-right">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.493863488737!2d-0.09893452337895185!3d51.52251147181678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b53f631ca57%3A0x6b6378e244d2d1e5!2s23%20Goswell%20Rd.%2C%20London%20EC1M%207AJ%2C%20UK!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+
+          <div class="address-details">
+            <p>Ultimate CGI</p>
+            <p>23 Goswell Road</p>
+            <p>London</p>
+            <p>EC1M 7AJ</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-dark-strip"></div>
+
+      <div class="footer-lime-bar">
+        <div class="max-w-7xl footer-content">
+          <div class="footer-left">
+            <span>© Copyright | Ultimate CGI | All Rights Reserved</span>
+            <span class="footer-divider">|</span>
+            <span class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span>Rated 5.0 on</span>
+            <a href="https://share.google/s1D8fXVICY9sNhziW" class="bold-google" target="_blank" rel="noopener noreferrer">Google</a>
+          </div>
+
+          <div class="footer-socials">
+            <a href="http://instagram.com/ultimatecgi" aria-label="Facebook" class="social-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/ultimate-cgi" aria-label="Instagram" class="social-icon">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
