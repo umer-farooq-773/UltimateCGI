@@ -1,0 +1,118 @@
+/* Popup for the contact form + honeypot field */
+
+/* Hide the spam-trap field from real visitors */
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.cf-no-scroll {
+  overflow: hidden;
+}
+
+.cf-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* The hidden attribute must win over display:flex above */
+.cf-popup[hidden] {
+  display: none;
+}
+
+.cf-popup-box {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  padding: 36px 28px 28px;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #1a1a1a;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  animation: cf-pop 0.2s ease-out;
+}
+
+.cf-popup-x {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  border: 0;
+  background: transparent;
+  font-size: 28px;
+  line-height: 1;
+  color: #666;
+  cursor: pointer;
+}
+
+.cf-popup-x:hover {
+  color: #000;
+}
+
+.cf-popup-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.cf-popup.is-success .cf-popup-icon {
+  background: #2e9e5b;
+}
+
+.cf-popup.is-error .cf-popup-icon {
+  background: #d64545;
+}
+
+.cf-popup-box h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.cf-popup-box p {
+  margin: 0 0 22px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.cf-popup-btn {
+  min-width: 120px;
+  padding: 10px 24px;
+  border: 0;
+  border-radius: 6px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.cf-popup-btn:hover {
+  background: #333333;
+}
+
+@keyframes cf-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
