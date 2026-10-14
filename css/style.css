@@ -1464,6 +1464,8 @@ main {
   resize: vertical;
 }
 
+
+
 .btn-container {
   display: flex;
   justify-content: flex-end; /* Submit button ko right side pe align karta hai */
@@ -1525,3 +1527,4 @@ main {
     height: 280px;
   }
 }
+
