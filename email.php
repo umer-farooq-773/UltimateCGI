@@ -7,7 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars(strip_tags(trim($_POST['message'] ?? '')));
 
     // Destination email
-    $to = "utlimatecgi@gmail.com"; 
+    // $to = "utlimatecgi@gmail.com"; 
+    $to = "umerf1417@gmail.com"; 
     
     $subject = "New Contact Form Submission - Ultimate CGI";
 
